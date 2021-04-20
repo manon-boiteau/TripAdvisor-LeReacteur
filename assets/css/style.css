@@ -54,7 +54,7 @@ h3 {
   margin-left: 20px;
 }
 .button:hover {
-  filter: opacity(80%);
+  filter: opacity(75%);
   cursor: pointer;
 }
 
@@ -75,6 +75,23 @@ header .container {
 /* Logo */
 header img {
   width: 190px;
+}
+
+/* Search bar */
+header input {
+  width: 350px;
+  height: 38px;
+  border-radius: 8px;
+  border: 2px rgb(231, 231, 231) solid;
+  margin-left: -100px;
+  padding-left: 45px;
+}
+
+.search .glass {
+  position: relative;
+  right: 60px;
+  top: 3px;
+  font-size: 20px;
 }
 
 /* Navigation */
@@ -138,7 +155,27 @@ main nav div:hover {
   cursor: pointer;
 }
 
-/* Images x3 */
+/* Images x3 + button */
+.part-1 button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 440px;
+  z-index: 1;
+  font-size: 12px;
+}
+.part-1 button:hover {
+  z-index: 1;
+  filter: none;
+  background-color: rgba(31, 30, 30, 0.9);
+}
+
+.part-1 button .picture {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
 .col-1 {
   margin-top: 25px;
   display: flex;
