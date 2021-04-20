@@ -6,8 +6,8 @@
 /* GLOBAL RULES */
 /* --------------------- */
 body {
-  background-color: rgb(199, 191, 191);
-  font-family: "Trip Sans", sans-serif; /* Voir pq ca ne fonctionne pas */
+  /* background-color: rgb(199, 191, 191); */
+  font-family: "Trip Sans";
 }
 
 .container {
@@ -20,7 +20,18 @@ body {
 /* --------------------- */
 h1 {
   font-size: 54px;
-  font-family: "Trip Sans";
+  font-family: "Plastic Sans";
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /* --------------------- */
@@ -31,18 +42,33 @@ h1 {
 }
 
 /* --------------------- */
+/* BUTTONS */
+/* --------------------- */
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.button:hover {
+  filter: opacity(80%);
+  cursor: pointer;
+}
+
+/* --------------------- */
 /* HEADER */
 /* --------------------- */
 header {
   background-color: white;
-  margin-bottom: 20px;
 }
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid green;
   height: 101px;
 }
 
@@ -64,9 +90,11 @@ nav ol {
 nav ol li {
   padding: 10px;
   border-radius: 20px;
+  font-family: "Trip Sans";
 }
 nav ol li:hover {
   background-color: #f1f1f1;
+  cursor: pointer;
 }
 
 header nav button {
@@ -75,25 +103,16 @@ header nav button {
   font-size: 16px;
 }
 
-/* Bouton "Connectez-vous */
-header .button {
-  background-color: black;
-  color: white;
-  border: none;
-  font-size: 16px;
-  padding: 10px 15px;
-  border-radius: 20px;
-  margin-left: 20px;
-}
-header .button:hover {
-  filter: opacity(80%);
+header nav button:hover {
+  cursor: pointer;
 }
 
 /* --------------------- */
 /* MAIN */
 /* --------------------- */
 main {
-  border: 1px solid red;
+  padding-top: 20px;
+  /* border: 1px solid red; */
   background-color: white;
 }
 
@@ -104,12 +123,19 @@ main nav {
 }
 
 main nav div {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   height: 87px;
   width: 148px;
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
+}
+main nav div:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 /* Images x3 */
@@ -125,10 +151,11 @@ main nav div {
   justify-content: space-between;
 }
 
-.paris-1,
 .paris-2,
 .paris-3 {
   object-fit: cover;
+  width: 483px;
+  height: 215px;
 }
 
 .paris-1 {
@@ -136,13 +163,93 @@ main nav div {
   height: 432px;
 }
 
-.paris-2,
-.paris-3 {
-  width: 483px;
-  height: 215px;
+.paris-1:hover,
+.paris-2:hover,
+.paris-3:hover {
+  opacity: 80%;
+  cursor: pointer;
 }
 
 /* Small nav */
+.mini-nav {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.small-nav {
+  font-size: 12px;
+  padding: 0;
+  margin-top: 0;
+}
+
+.small-nav ul {
+  display: flex;
+}
+
+.small-nav ul li {
+  margin: 0 8px 0 8px;
+}
+
+.small-nav ul li:nth-child(1) {
+  margin-left: 0;
+}
+
+.small-nav a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+}
+.small-nav a:hover {
+  text-decoration: underline;
+}
+/* Colonnes */
+.colonnes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro h2,
+.trip {
+  margin-top: 30px;
+}
+
+.intro p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #413f3f;
+  margin-top: 15px;
+  margin-right: 70px;
+  padding-right: 40px;
+  line-height: 25px;
+}
+
+.trip {
+  width: 465px;
+}
+
+.trip .button {
+  padding: 18px;
+  margin: 30px 0 0 0;
+}
+
+.trip h3 {
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.trip > div {
+  background-color: #ff5d5d;
+  border-radius: 10px 10px 0 0;
+  padding: 30px 20px;
+}
+
+.trip img {
+  width: 465px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
 
 /* --------------------- */
 /* FOOTER */
