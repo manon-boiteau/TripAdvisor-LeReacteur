@@ -1,0 +1,110 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <title>TripAdvisor - Réplique</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <a href="https://www.tripadvisor.fr/">
+          <img src="./assets/img/logo-tripadvisor.svg" alt="logo TripAdvisor"
+        /></a>
+
+        <!-- Navigation -->
+        <div class="nav">
+          <nav>
+            <ol>
+              <li>
+                <i class="fas fa-pen"></i>
+                <button>Avis</button>
+              </li>
+
+              <li>
+                <i class="far fa-bell"></i>
+                <button>Alertes</button>
+              </li>
+              <li>
+                <i class="far fa-heart"></i>
+                <button>Favoris</button>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Button for user account -->
+          <button class="button">Connectez-vous</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <section>
+        <h1><span class="red">Explorez</span> Paris</h1>
+
+        <!-- Navigation tabs -->
+        <nav>
+          <div>Hôtels</div>
+          <div>Locations de vacances</div>
+          <div>Activités</div>
+          <div>Restauration</div>
+          <div>Forum de voyage</div>
+          <div>Vols<i class="fas fa-plane"></i></div>
+          <div>Plus<i class="fas fa-ellipsis-h"></i></div>
+        </nav>
+
+        <!-- Images (x3) -->
+        <div class="col-1">
+          <img class="paris-1" src="./assets/img/paris-1.jpg" alt="Paris" />
+          <div class="col-2">
+            <img
+              class="paris-2"
+              src="./assets/img/paris-2.jpg"
+              alt="Two peoples in Paris"
+            />
+            <img
+              class="paris-3"
+              src="./assets/img/paris-3.jpg"
+              alt="The Eiffel Tower"
+            />
+          </div>
+        </div>
+
+        <!-- Small nav under images -->
+        <nav>
+          <ul>
+            <li><a>Europe</a>></li>
+            <li><a>France</a>></li>
+            <li><a>Île-de-France</a>></li>
+            <li>
+              <select>
+                <option value="paris">Paris</option>
+                <option value="hotels">Hôtels</option>
+                <option value="activites">Activités</option>
+                <option value="restaurants">Restaurants</option>
+                <option value="vol">Vol</option>
+                <option value="locations">Locations vacances</option>
+                <option value="shopping">Shopping</option>
+                <option value="forfait">Forfait touristique</option>
+                <option value="croisieres">Croisières</option>
+                <option value="voitures">Voitures de location</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer></footer>
+  </body>
+</html>

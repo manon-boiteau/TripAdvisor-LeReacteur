@@ -1,0 +1,149 @@
+/* --------------------- */
+/* FONTS */
+/* --------------------- */
+
+/* --------------------- */
+/* GLOBAL RULES */
+/* --------------------- */
+body {
+  background-color: rgb(199, 191, 191);
+  font-family: "Trip Sans", sans-serif; /* Voir pq ca ne fonctionne pas */
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* --------------------- */
+/* TITLES */
+/* --------------------- */
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans";
+}
+
+/* --------------------- */
+/* COLORS */
+/* --------------------- */
+.red {
+  color: #ff5d5d;
+}
+
+/* --------------------- */
+/* HEADER */
+/* --------------------- */
+header {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid green;
+  height: 101px;
+}
+
+/* Logo */
+header img {
+  width: 190px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ol {
+  display: flex;
+}
+
+nav ol li {
+  padding: 10px;
+  border-radius: 20px;
+}
+nav ol li:hover {
+  background-color: #f1f1f1;
+}
+
+header nav button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+/* Bouton "Connectez-vous */
+header .button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+header .button:hover {
+  filter: opacity(80%);
+}
+
+/* --------------------- */
+/* MAIN */
+/* --------------------- */
+main {
+  border: 1px solid red;
+  background-color: white;
+}
+
+main nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+main nav div {
+  box-sizing: border-box;
+  height: 87px;
+  width: 148px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Images x3 */
+.col-1 {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paris-1,
+.paris-2,
+.paris-3 {
+  object-fit: cover;
+}
+
+.paris-1 {
+  width: 655px;
+  height: 432px;
+}
+
+.paris-2,
+.paris-3 {
+  width: 483px;
+  height: 215px;
+}
+
+/* Small nav */
+
+/* --------------------- */
+/* FOOTER */
+/* --------------------- */
