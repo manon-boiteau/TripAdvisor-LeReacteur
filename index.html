@@ -4,45 +4,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome icons -->
     <script
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
       data-auto-a11y="true"
     ></script>
-    <title>TripAdvisor - Réplique</title>
+    <title>TripAdvisor 🏝 - Réplique</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
       <div class="container">
+        <i class="fas fa-bars hidden"></i>
         <a href="https://www.tripadvisor.fr/">
           <img src="./assets/img/logo-tripadvisor.svg" alt="logo TripAdvisor"
         /></a>
 
-        <div class="search">
+        <!-- Search bar -->
+        <!-- <div class="search">
           <i class="glass fas fa-search"></i>
           <input type="search" />
-        </div>
+        </div> -->
 
-        <!-- Navigation -->
-        <div class="nav">
+        <div class="main-nav">
+          <!-- Navigation -->
           <nav>
-            <ol>
+            <ul>
               <li>
-                <i class="fas fa-pen"></i>
-                <button>Avis</button>
+                <i class="nav-icon fas fa-pen"></i>
+                <a href="/">Avis</a>
               </li>
 
               <li>
-                <i class="far fa-bell"></i>
-                <button>Alertes</button>
+                <i class="nav-icon far fa-bell"></i>
+                <a href="/">Alertes</a>
               </li>
               <li>
-                <i class="far fa-heart"></i>
-                <button>Favoris</button>
+                <i class="nav-icon far fa-heart"></i>
+                <a href="/">Favoris</a>
               </li>
-            </ol>
+            </ul>
           </nav>
 
           <!-- Button for user account -->
@@ -53,91 +56,25 @@
 
     <!-- MAIN -->
     <main class="container">
-      <section>
-        <h1><span class="red">Explorez</span> Paris</h1>
+      <h1><span class="red">Explorez</span> Paris</h1>
 
-        <!-- Navigation tabs -->
-        <nav>
-          <div>Hôtels<i class="fas fa-bed"></i></div>
-          <div>Locations de vacances<i class="fas fa-house-user"></i></div>
-          <div>Activités<i class="fas fa-hockey-puck"></i></div>
-          <div>Restaura...<i class="fas fa-utensils"></i></div>
-          <div>Forum de voyage<i class="far fa-comment-alt"></i></div>
-          <div>Vols<i class="fas fa-plane"></i></div>
-          <div>Plus<i class="fas fa-ellipsis-h"></i></div>
-        </nav>
-
-        <!-- Images (x3) + button -->
-        <div class="part-1">
-          <button class="button">
-            <i class="picture far fa-image"></i> Toutes les photos
-          </button>
-          <div class="col-1">
-            <div>
-              <img class="paris-1" src="./assets/img/paris-1.jpg" alt="Paris" />
-            </div>
-
-            <div class="col-2">
-              <img
-                class="paris-2"
-                src="./assets/img/paris-2.jpg"
-                alt="Two peoples in Paris"
-              />
-              <img
-                class="paris-3"
-                src="./assets/img/paris-3.jpg"
-                alt="The Eiffel Tower"
-              />
-            </div>
-          </div>
+      <!-- Navigation tabs -->
+      <nav>
+        <div><span>Hôtels</span><i class="fas fa-bed"></i></div>
+        <div>
+          <span>Locations de vacances</span><i class="fas fa-house-user"></i>
         </div>
-
-        <!-- Small nav under images -->
-        <div class="container mini-nav">
-          <nav class="small-nav">
-            <ul>
-              <li><a href="/">Europe</a></li>
-              >
-              <li><a href="/">France</a></li>
-              >
-              <li><a href="/">Île-de-France</a></li>
-              >
-              <li><a href="/">Paris</a></li>
-            </ul>
-          </nav>
-          <span>Visiter : Paris</span>
+        <div><span>Activités</span><i class="fas fa-hockey-puck"></i></div>
+        <div><span>Restauration</span><i class="fas fa-utensils"></i></div>
+        <div>
+          <span>Forum de voyage</span><i class="far fa-comment-alt"></i>
         </div>
-
-        <div class="colonnes">
-          <div class="intro">
-            <h2>La Ville Lumière éblouit en tous points</h2>
-            <p>
-              Aucun autre endroit au monde ne fait autant rêver que Paris. La
-              ville séduit par son art, son architecture, sa culture et sa
-              cuisine, mais il y a aussi des merveilles plus discrètes qui
-              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
-              les pâtisseries au coin de la rue et les petits bistrots douillets
-              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
-              vous approprier Paris.
-            </p>
-          </div>
-
-          <div class="trip">
-            <div>
-              <h3>Paris : commencez à organiser !</h3>
-              <p>
-                Créez un voyage pour enregistrer et organiser toutes vos idées
-                et les visualiser sur une carte.
-              </p>
-              <button class="button">Créez un voyage</button>
-            </div>
-            <img src="./assets/img/map.png" alt="Map" />
-          </div>
+        <div><span>Vols</span><i class="fas fa-plane"></i></div>
+        <div class="hidden">
+          <span>Croisières</span><i class="fas fa-ship"></i>
         </div>
-      </section>
+        <div><span>Plus</span><i class="fas fa-ellipsis-h"></i></div>
+      </nav>
     </main>
-
-    <!-- FOOTER -->
-    <footer></footer>
   </body>
 </html>
