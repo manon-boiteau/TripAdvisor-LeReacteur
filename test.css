@@ -394,3 +394,128 @@ footer select {
   font-family: "Trip Sans Reg";
   font-size: 16px;
 }
+
+/* ------------------ */
+
+@media (max-width: 767px) {
+  /* Main - navigation tabs */
+  h1 {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  main nav {
+    flex-wrap: nowrap;
+    /* margin-left: 20px; */
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  main nav > div {
+    flex: 0 0 auto;
+  }
+  main nav div span {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+}
+
+/* Section 1 */
+.section-1 h2 {
+  margin-bottom: 30px;
+}
+/* --- aside */
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  /* height: 400px; */
+}
+.carousel-wrapper > div:first-child {
+  width: 25%;
+  height: 100%;
+  padding: 10px 30px 0 0;
+}
+.carousel-wrapper > div:last-child {
+  width: 75%;
+  height: 100%;
+}
+.carousel-wrapper p {
+  font-size: 18px;
+  font-family: var(--second-font);
+  line-height: 22px;
+  margin: 20px 0;
+}
+.carousel-wrapper a {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: var(--main-font-bold);
+}
+..carousel-wrapper a:hover {
+  text-decoration: underline;
+}
+/* --- carousel */
+.carousel-wrapper .col-2 {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.carousel-wrapper .col-2 > div {
+  height: 100%;
+  width: calc(100% / 3 - (30px / 3));
+  flex-shrink: 0;
+}
+.carousel-wrapper .col-2 > div:not(:last-child) {
+  margin-right: 15px;
+}
+.carousel-wrapper .col-2 img {
+  width: 100%;
+}
+.carousel-wrapper .col-2 .img-icon {
+  position: relative;
+}
+.carousel-wrapper .col-2 .icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-wrapper .col-2 .heart {
+  font-size: 20px;
+}
+.carousel-wrapper .col-2 span + a {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+.carousel-wrapper .col-2 a:first-child,
+.carousel-wrapper .col-2 a:last-child {
+  display: block;
+}
+.carousel-wrapper .col-2 a:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.carousel-wrapper .col-2 a:last-child {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.carousel-wrapper .col-2 .picto-circle {
+  font-size: 12px;
+}
