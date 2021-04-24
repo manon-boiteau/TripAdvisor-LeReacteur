@@ -316,7 +316,7 @@ main nav div:hover {
   background-color: var(--tomato-red);
   height: 274px;
   border-radius: 10px 10px 0 0;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 .intro .col-2 div:last-child {
   height: 190px;
@@ -487,34 +487,34 @@ footer span {
 /* ----------------------------------------------------- */
 /* MEDIA QUERIES */
 /* ----------------------------------------------------- */
-@media (max-width: 1160px) {
+@media screen and (max-width: 1160px) {
   .container {
     width: 100%;
     padding: 0 20px;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1180px) {
+@media screen and (max-width: 1180px) and (min-width: 1024px) {
   /* Main - navigation tabs */
-  main nav {
+  main .main-nav {
     flex-wrap: wrap;
   }
-  main nav div:not(:last-child),
-  main nav div:last-child {
+  main .main-nav div:not(:last-child),
+  main .main-nav div:last-child {
     margin-right: 0;
   }
-  main nav div {
+  main .main-nav div {
     flex: initial;
     width: calc(25% - 15px);
     margin-bottom: 15px;
     margin-right: 15px;
   }
-  main nav div span {
+  main .main-nav div span {
     max-width: 100%;
     overflow: hidden;
     text-overflow: initial;
   }
-  main nav .hidden {
+  main .main-nav .hidden {
     display: inherit;
   }
 
@@ -528,10 +528,7 @@ footer span {
   }
 }
 
-@media (max-width: 1024px) {
-}
-
-@media (min-width: 769px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 769px) {
   /* Header */
   header img {
     width: 170px;
@@ -544,6 +541,40 @@ footer span {
     margin-left: 10px;
   }
 
+  /* Main - navigation tabs */
+  main .main-nav {
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: -30px;
+    width: calc(100% + 20px);
+    padding-right: 20px;
+  }
+  main .main-nav div:not(:last-child),
+  main .main-nav div:last-child {
+    margin-right: 0;
+  }
+  main .main-nav div {
+    flex: initial;
+    width: calc(25% - 15px);
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  main .main-nav div span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: initial;
+  }
+  main .main-nav .hidden {
+    display: inherit;
+  }
+
   /* Images (x3)*/
   .pictures {
     height: 278px;
@@ -553,6 +584,16 @@ footer span {
   }
   .pictures .col-1 div {
     top: 230px;
+  }
+
+  /* Small nav under images */
+  .mini-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 12px;
+    margin-top: 20px;
   }
 
   /* Intro */
@@ -596,7 +637,7 @@ footer span {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* Header */
   header {
     position: relative;
@@ -621,42 +662,41 @@ footer span {
   .hidden {
     display: inherit;
   }
+
   /* Main - navigation tabs */
   h1 {
     font-size: 32px;
     margin-left: 20px;
   }
-  main nav {
-    flex-wrap: nowrap;
-    overflow: hidden;
-    overflow-x: scroll;
+  /* Main - navigation tabs */
+  main .main-nav {
+    flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 3;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 20px 10px 20px;
     border-bottom: 2px solid var(--light-gray);
     margin-bottom: -30px;
   }
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+  main .main-nav div:not(:last-child),
+  main .main-nav div:last-child {
+    margin-right: 0;
   }
-  main nav > div {
-    flex-shrink: 0;
+  main .main-nav div {
+    flex: initial;
+    width: calc(25% - 15px);
+    margin-bottom: 15px;
+    margin-right: 15px;
   }
-  main nav > div:not(:last-child) {
-    margin-right: 20px;
-  }
-  main nav > div:first-child {
-    margin-left: 20px;
-  }
-  main nav div span {
+  main .main-nav div span {
     max-width: 100%;
     overflow: hidden;
-    text-overflow: initial;
+    text-overflow: ellipsis;
+  }
+  main .main-nav .hidden {
+    display: inherit;
   }
 
   /* Images (x3)*/
@@ -733,5 +773,29 @@ footer span {
   }
   .carousel-wrapper .col-2 > div {
     width: 80%;
+  }
+
+  /* Section 2 */
+  .guide-wrapper {
+    width: calc(100% + 20px);
+    overflow-x: scroll;
+  }
+  .guide-wrapper > div {
+    width: calc(100% / 2.5 - (20px / 2));
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 723px) 
+
+  /* Section 2 */
+  .section-2 {
+    width: calc(100% + 20px);
+    overflow-x: scroll;
+    margin-left: 20px;
+  }
+  .guide-wrapper > div {
+    width: calc(100% / 1.5 - (20px / 2));
+    overflow: hidden;
   }
 }
