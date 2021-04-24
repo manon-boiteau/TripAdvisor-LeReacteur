@@ -786,8 +786,7 @@ footer span {
   }
 }
 
-@media screen and (max-width: 723px) 
-
+@media screen and (max-width: 723px) {
   /* Section 2 */
   .section-2 {
     width: calc(100% + 20px);
