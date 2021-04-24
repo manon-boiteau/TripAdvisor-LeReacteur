@@ -124,33 +124,33 @@ header img {
 }
 
 /* Navigation */
-.main-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.main-nav ul {
+.header-nav ul {
   display: flex;
 }
 
-.main-nav ul li {
+.header-nav ul li {
   padding: 10px;
   border-radius: 20px;
   font-family: "Trip Sans Reg";
 }
 
-.main-nav li a {
+.header-nav li a {
   text-decoration: none;
   color: var(--black);
   margin-left: 5px;
 }
 
-.main-nav .nav-icon {
+.header-nav .nav-icon {
   font-size: 20px;
 }
 
 /* Hover */
-.main-nav ul li:hover {
+.header-nav ul li:hover {
   background-color: var(--light-gray);
   cursor: pointer;
 }
@@ -426,18 +426,15 @@ main nav div:hover {
 .section-2 {
   width: 100%;
   margin-top: 70px;
-  background-color: rosybrown;
 }
 .guide-wrapper {
   width: 100%;
   height: 450px;
   display: flex;
   margin-top: 30px;
-  border: solid 4px fuchsia;
   overflow: hidden;
 }
 .guide-wrapper > div {
-  border: 4px solid greenyellow;
   flex-shrink: 0;
   height: 100%;
   width: calc(100% / 3 - (20px / 2));
@@ -471,6 +468,22 @@ main nav div:hover {
   margin-right: 5px;
 }
 
+/* Footer */
+footer {
+  background-color: var(--very-light-orange);
+  height: 80px;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 34px;
+}
+footer span {
+  font-family: var(--main-font-bold);
+  font-weight: bold;
+  color: var(--tomato-red);
+}
+
 /* ----------------------------------------------------- */
 /* MEDIA QUERIES */
 /* ----------------------------------------------------- */
@@ -496,6 +509,11 @@ main nav div:hover {
     margin-bottom: 15px;
     margin-right: 15px;
   }
+  main nav div span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: initial;
+  }
   main nav .hidden {
     display: inherit;
   }
@@ -510,16 +528,19 @@ main nav div:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
   /* Header */
   header img {
     width: 170px;
   }
 
-  .main-nav li a {
+  .header-nav nav li a {
     display: none;
   }
-  .main-nav .nav-icon {
+  .header-nav .nav-icon {
     margin-left: 10px;
   }
 
@@ -555,16 +576,27 @@ main nav div:hover {
   }
   .intro .col-2 div:last-child {
     border-radius: 0 10px 10px 0;
-    height: 100%;
+    height: auto;
   }
 
-  /* section-1 */
-  /* .container {
-    padding: 0;
-  } */
+  /* Section 1 */
+  .carousel-wrapper {
+    width: calc(100% + 20px);
+  }
+
+  /* Section 2 */
+  .guide-wrapper {
+    width: calc(100% + 20px);
+    overflow-x: scroll;
+  }
+  .guide-wrapper > div {
+    width: calc(100% / 2.5 - (20px / 2));
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Header */
   header {
     position: relative;
@@ -580,16 +612,15 @@ main nav div:hover {
   header button {
     display: none;
   }
-  .main-nav {
+  .header-nav {
     display: none;
   }
-  .main-nav .nav-icon {
+  .header-nav .nav-icon {
     margin-left: 10px;
   }
   .hidden {
     display: inherit;
   }
-
   /* Main - navigation tabs */
   h1 {
     font-size: 32px;
@@ -597,7 +628,6 @@ main nav div:hover {
   }
   main nav {
     flex-wrap: nowrap;
-    /* margin-left: 20px; */
     overflow: hidden;
     overflow-x: scroll;
     position: -webkit-sticky;
@@ -608,7 +638,7 @@ main nav div:hover {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--light-gray);
-    margin-bottom: -20px;
+    margin-bottom: -30px;
   }
   ::-webkit-scrollbar {
     width: 0;
@@ -625,6 +655,8 @@ main nav div:hover {
   }
   main nav div span {
     max-width: 100%;
+    overflow: hidden;
+    text-overflow: initial;
   }
 
   /* Images (x3)*/
@@ -703,24 +735,3 @@ main nav div:hover {
     width: 80%;
   }
 }
-
-/* @media (max-width: 565px) {
-  .intro .col-1 {
-    margin-bottom: 20px;
-  }
-  .intro .col-2 {
-    height: 465px;
-    padding: 30px;
-    border: 2px red solid;
-  }
-  .intro .col-2 div:first-child {
-    height: 65%;
-  }
-  .intro .col-2 div:last-child {
-    height: 35%;
-  }
-  .intro .col-2 h3 {
-    line-height: 35px;
-    margin-bottom: 15px;
-  }
-} */
