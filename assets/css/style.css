@@ -629,7 +629,7 @@ footer a {
   }
 
   /* Main - navigation tabs */
-  main .main-nav {
+  main nav {
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -644,22 +644,22 @@ footer a {
     padding-right: 20px;
     padding-left: 20px;
   }
-  main .main-nav div:not(:last-child),
-  main .main-nav div:last-child {
+  main nav div:not(:last-child),
+  main nav div:last-child {
     margin-right: 0;
   }
-  main .main-nav div {
+  main nav div {
     flex: initial;
     width: calc(25% - 15px);
     margin-bottom: 15px;
     margin-right: 15px;
   }
-  main .main-nav div span {
+  main nav div span {
     max-width: 100%;
     overflow: hidden;
     text-overflow: initial;
   }
-  main .main-nav .hidden {
+  main nav .hidden {
     display: inherit;
   }
 
@@ -831,12 +831,13 @@ footer a {
   }
   .intro .col-2 div:first-child {
     border-radius: 10px 10px 0 0;
+    height: 220px;
   }
   .intro .col-2 div:last-child {
     border-radius: 0 0 10px 10px;
   }
   .intro button {
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
   }
 
   /* section-1 */
@@ -893,7 +894,7 @@ footer a {
     margin-top: 0;
   }
   .guide-wrapper > div {
-    width: calc(100% / 1.5 - (20px / 3));
+    width: calc(100% / 1.2 - (20px / 3));
     overflow: hidden;
   }
 }
