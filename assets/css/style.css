@@ -837,7 +837,7 @@ footer a {
     border-radius: 0 0 10px 10px;
   }
   .intro button {
-    margin: 30px 0 0 0;
+    margin: 15px 0 0 0;
   }
 
   /* section-1 */
@@ -894,7 +894,7 @@ footer a {
     margin-top: 0;
   }
   .guide-wrapper > div {
-    width: calc(100% / 1.2 - (20px / 3));
+    width: calc(100% / 1.5 - (20px / 3));
     overflow: hidden;
   }
 }
