@@ -316,6 +316,7 @@ main nav div:hover {
   display: flex;
   height: 430px;
   margin-top: 30px;
+  width: 100%;
 }
 
 .pictures .col-1 {
@@ -601,8 +602,7 @@ footer a {
 /* ----------------------------------------------------- */
 @media screen and (max-width: 1160px) {
   .container {
-    width: 100%;
-    padding: 0 20px;
+    width: 100vw;
   }
 }
 
@@ -610,6 +610,7 @@ footer a {
   /* Main - navigation tabs */
   main .main-nav {
     flex-wrap: wrap;
+    padding-right: 0;
   }
   main .main-nav div:not(:last-child),
   main .main-nav div:last-child {
@@ -641,7 +642,16 @@ footer a {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 769px) {
+  .container {
+    width: 100vw;
+  }
+  .container h1 {
+    padding-left: 20px;
+  }
   /* Header */
+  header .container {
+    padding: 0 20px;
+  }
   header img {
     width: 170px;
   }
@@ -670,8 +680,9 @@ footer a {
     padding-bottom: 10px;
     border-bottom: 2px solid var(--light-gray);
     margin-bottom: -30px;
-    width: calc(100% + 20px);
+    width: 100%;
     padding-right: 20px;
+    padding-left: 20px;
   }
   main .main-nav div:not(:last-child),
   main .main-nav div:last-child {
@@ -711,11 +722,14 @@ footer a {
     margin-top: 0px;
     font-size: 12px;
     margin-top: 20px;
+    padding-left: 20px;
   }
 
   /* Intro */
   .intro {
     flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .intro .col-1 {
     width: 100%;
@@ -738,17 +752,24 @@ footer a {
   }
 
   /* Section 1 */
+  .section-1 {
+    padding-left: 20px;
+  }
   .carousel-wrapper {
-    width: calc(100% + 20px);
+    width: 100%;
   }
 
   /* Section 2 */
+  .section-2 {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
   .guide-wrapper {
-    width: calc(100% + 20px);
+    width: calc(100%);
     overflow-x: scroll;
   }
   .guide-wrapper > div {
-    width: calc(100% / 2.5 - (20px / 2));
+    width: calc(100% / 2.5 - (20px / 3));
     overflow: hidden;
     overflow-x: scroll;
   }
@@ -758,7 +779,6 @@ footer a {
   /* Header */
   header {
     position: relative;
-    padding: 0 20px;
   }
   header img {
     width: 120px;
@@ -766,6 +786,7 @@ footer a {
   header .container {
     justify-content: space-between;
     height: 50px;
+    padding: 0 20px;
   }
   header button {
     display: none;
@@ -786,35 +807,33 @@ footer a {
     font-size: 32px;
     margin-left: 20px;
   }
+
   /* Main - navigation tabs */
-  main .main-nav {
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 3;
-    padding: 20px 20px 10px 20px;
-    border-bottom: 2px solid var(--light-gray);
-    margin-bottom: -30px;
+  main nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    overflow: hidden;
+    overflow-x: scroll;
   }
-  main .main-nav div:not(:last-child),
-  main .main-nav div:last-child {
-    margin-right: 0;
+
+  main nav div {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    padding: 20px;
   }
-  main .main-nav div {
-    flex: initial;
-    width: calc(25% - 15px);
-    margin-bottom: 15px;
+
+  main nav div:not(:last-child) {
     margin-right: 15px;
   }
-  main .main-nav div span {
-    max-width: 100%;
+
+  main nav div span {
+    max-width: 80px;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  main .main-nav .hidden {
-    display: inherit;
   }
 
   /* Images (x3)*/
@@ -871,6 +890,9 @@ footer a {
     border-radius: 0 0 10px 10px;
     height: 45%;
   }
+  .intro button {
+    margin: 10px 0 0 0;
+  }
 
   /* section-1 */
   .section-1 {
@@ -894,25 +916,29 @@ footer a {
   }
 
   /* Section 2 */
+  .section-2 {
+    margin-left: 0;
+  }
   .guide-wrapper {
-    width: calc(100% + 20px);
     overflow-x: scroll;
+    width: 100%;
   }
   .guide-wrapper > div {
     width: calc(100% / 2.5 - (20px / 2));
-    overflow: hidden;
+    overflow: scroll;
   }
 }
 
 @media screen and (max-width: 723px) {
   /* Section 2 */
   .section-2 {
-    width: calc(100% + 20px);
+    width: calc(100% - 20px);
     overflow-x: scroll;
     margin-left: 20px;
+    margin-right: 0;
   }
   .guide-wrapper > div {
-    width: calc(100% / 1.5 - (20px / 2));
+    width: calc(100% / 1.5 - (20px / 3));
     overflow: hidden;
   }
 }
