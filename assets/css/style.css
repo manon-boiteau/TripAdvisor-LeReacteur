@@ -416,12 +416,10 @@ main nav div:hover {
 }
 .carousel-wrapper > div:first-child {
   width: 25%;
-  height: 100%;
   padding: 10px 30px 0 0;
 }
 .carousel-wrapper > div:last-child {
   width: 75%;
-  height: 100%;
 }
 .carousel-wrapper p {
   font-size: 18px;
@@ -449,7 +447,6 @@ main nav div:hover {
   height: 0;
 }
 .carousel-wrapper .col-2 > div {
-  height: 100%;
   width: calc(100% / 3 - (30px / 3));
   flex-shrink: 0;
 }
@@ -514,7 +511,6 @@ main nav div:hover {
 }
 .guide-wrapper > div {
   flex-shrink: 0;
-  height: 100%;
   width: calc(100% / 3 - (20px / 2));
 }
 .guide-wrapper > div:not(:last-child) {
@@ -712,7 +708,6 @@ footer a {
   }
   .intro .col-2 div:last-child {
     border-radius: 0 10px 10px 0;
-    height: auto;
   }
 
   /* Section 1 */
@@ -835,11 +830,9 @@ footer a {
   }
   .intro .col-2 div:first-child {
     border-radius: 10px 10px 0 0;
-    height: 55%;
   }
   .intro .col-2 div:last-child {
     border-radius: 0 0 10px 10px;
-    height: 45%;
   }
   .intro button {
     margin: 10px 0 0 0;
@@ -847,7 +840,7 @@ footer a {
 
   /* section-1 */
   .section-1 {
-    padding: 0 0 0 20px;
+    padding: 20px 0 0 20px;
   }
   .carousel-wrapper {
     flex-direction: column;
@@ -855,7 +848,6 @@ footer a {
   .carousel-wrapper > div:first-child {
     padding: 0;
     width: 100%;
-    height: 100%;
     margin-bottom: 40px;
   }
   .carousel-wrapper > div:last-child {
