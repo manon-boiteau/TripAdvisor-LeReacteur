@@ -26,27 +26,22 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: var(--main-font-reg);
   color: var(--dark-grey);
 }
-
 .container {
   width: 1140px;
   margin: 0 auto;
 }
-
 a {
   text-decoration: none;
   font-family: var(--main-font-reg);
   color: var(--dark-grey);
 }
-
 button:focus {
   outline: none;
 }
@@ -59,19 +54,16 @@ h1 {
   font-family: var(--main-font-bold);
   font-weight: bold;
 }
-
 h2 {
   font-size: 28px;
   font-family: var(--main-font-bold);
   color: var(--black);
 }
-
 h3 {
   font-size: 32px;
   font-family: var(--main-font-reg);
   color: var(--black);
 }
-
 h4 {
   font-size: 24px;
 }
@@ -115,7 +107,6 @@ header {
   background-color: var(--white);
   margin-bottom: 20px;
 }
-
 header .container {
   display: flex;
   align-items: center;
@@ -133,27 +124,22 @@ header img {
   display: flex;
   align-items: center;
 }
-
 .header-nav ul {
   display: flex;
 }
-
 .header-nav ul li {
   padding: 10px;
   border-radius: 20px;
   font-family: "Trip Sans Reg";
 }
-
 .header-nav li a {
   text-decoration: none;
   color: var(--black);
   margin-left: 5px;
 }
-
 .header-nav .nav-icon {
   font-size: 20px;
 }
-
 /* Hover */
 .header-nav ul li:hover {
   background-color: var(--light-gray);
@@ -196,12 +182,10 @@ header button {
   justify-content: center;
   position: relative;
 }
-
 .modal .wrap-form h1 {
   font-size: 22px;
   font-weight: bold;
 }
-
 form {
   padding-top: 20px;
   width: 90%;
@@ -212,12 +196,10 @@ form {
 .wrap-form h1 {
   color: black;
 }
-
 form p {
   text-align: left;
   font-size: 10px;
 }
-
 form input,
 form textarea {
   width: 90%;
@@ -226,20 +208,16 @@ form textarea {
   border-radius: 5px;
   padding: 10px;
 }
-
 form input {
   height: 40px;
   margin-bottom: 15px;
 }
-
 form input:first-child {
   margin-top: 50px;
 }
-
 form textarea {
   height: 150px;
 }
-
 form input[type="submit"] {
   background-color: var(--white);
   color: var(--tomato-red);
@@ -249,7 +227,6 @@ form input[type="submit"] {
   font-weight: bold;
   cursor: pointer;
 }
-
 form input[type="submit"]:hover {
   background-color: var(--tomato-red);
   color: var(--white);
@@ -264,7 +241,6 @@ form input[type="submit"]:hover {
   top: 30px;
   right: 40px;
 }
-
 .close:hover,
 .close:focus {
   color: var(--white);
@@ -284,7 +260,6 @@ main nav {
   justify-content: space-between;
   margin-top: 30px;
 }
-
 main nav div {
   display: flex;
   flex: 1;
@@ -294,11 +269,9 @@ main nav div {
   border-radius: 15px;
   padding: 20px;
 }
-
 main nav div:not(:last-child) {
   margin-right: 15px;
 }
-
 main nav div span {
   max-width: 80px;
   overflow: hidden;
@@ -318,31 +291,26 @@ main nav div:hover {
   margin-top: 30px;
   width: 100%;
 }
-
 .pictures .col-1 {
   height: 100%;
   flex: 1;
   margin-right: 2px;
   position: relative;
 }
-
 .pictures .col-2 {
   height: 100%;
   width: 40%;
 }
-
 .pictures .col-1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 .pictures .col-2 img {
   height: calc(50% - 1px);
   width: 100%;
   object-fit: cover;
 }
-
 .pictures .col-2 img:last-child {
   margin-top: 2px;
 }
@@ -525,7 +493,6 @@ main nav div:hover {
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .carousel-wrapper .col-2 a:last-child {
   margin-top: 10px;
   font-size: 14px;
@@ -655,7 +622,6 @@ footer a {
   header img {
     width: 170px;
   }
-
   .header-nav nav li a {
     display: none;
   }
@@ -776,6 +742,9 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+  }
   /* Header */
   header {
     position: relative;
@@ -816,7 +785,6 @@ footer a {
     overflow: hidden;
     overflow-x: scroll;
   }
-
   main nav div {
     display: flex;
     justify-content: space-between;
@@ -825,11 +793,9 @@ footer a {
     border-radius: 15px;
     padding: 20px;
   }
-
   main nav div:not(:last-child) {
     margin-right: 15px;
   }
-
   main nav div span {
     max-width: 80px;
     overflow: hidden;
@@ -863,11 +829,11 @@ footer a {
   /* Intro */
   .intro {
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   .intro .col-1 {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 0 20px;
   }
   .intro .col-1 h2 {
@@ -901,7 +867,6 @@ footer a {
   .carousel-wrapper {
     flex-direction: column;
   }
-
   .carousel-wrapper > div:first-child {
     padding: 0;
     width: 100%;
@@ -930,12 +895,27 @@ footer a {
 }
 
 @media screen and (max-width: 723px) {
+  .container {
+    height: auto;
+  }
+  /* Intro */
+  .intro {
+    margin-bottom: 0;
+  }
+  .intro .col-2 h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .intro .button {
+    font-size: 14px;
+  }
   /* Section 2 */
   .section-2 {
     width: calc(100% - 20px);
     overflow-x: scroll;
     margin-left: 20px;
     margin-right: 0;
+    margin-top: 0;
   }
   .guide-wrapper > div {
     width: calc(100% / 1.5 - (20px / 3));
