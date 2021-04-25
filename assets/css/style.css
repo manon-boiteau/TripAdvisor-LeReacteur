@@ -373,7 +373,7 @@ main nav div:hover {
   line-height: 25px;
 }
 .intro .col-1 {
-  height: 100%;
+  /* height: 100%; */
   width: 50%;
 }
 .intro .col-2 {
@@ -784,20 +784,10 @@ footer a {
     margin-top: 30px;
     overflow: hidden;
     overflow-x: scroll;
-  }
-  main nav div {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border: 1px solid var(--black);
-    border-radius: 15px;
-    padding: 20px;
-  }
-  main nav div:not(:last-child) {
-    margin-right: 15px;
+    padding-left: 20px;
   }
   main nav div span {
-    max-width: 80px;
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
