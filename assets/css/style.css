@@ -708,6 +708,7 @@ footer a {
   }
   .intro .col-2 div:last-child {
     border-radius: 0 10px 10px 0;
+    height: auto;
   }
 
   /* Section 1 */
