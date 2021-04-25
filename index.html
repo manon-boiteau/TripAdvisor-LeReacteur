@@ -11,6 +11,10 @@
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
       data-auto-a11y="true"
     ></script>
+    <!-- JS import -->
+    <script src="./assets/js/modal.js"></script>
+    <!-- Axios import -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>TripAdvisor 🏝 - Réplique</title>
   </head>
   <body>
@@ -44,7 +48,54 @@
           </nav>
 
           <!-- Button for user account -->
-          <button class="button">Connectez-vous</button>
+          <button id="myBtn" class="button">Connectez-vous</button>
+          <!--------------------------------------------------------------------------------->
+          <div id="myModal" class="hidden modal">
+            <!-- Modal content -->
+            <div class="wrap-form">
+              <!-- Equivalent class="modal-content"-->
+              <span class="close">&times;</span>
+              <h1>Contact form</h1>
+              <form id="contactForm">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="firstname"
+                  name="firstname"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Lastname"
+                  id="lastname"
+                  name="lastname"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  id="subject"
+                  name="subject"
+                  required
+                />
+                <textarea
+                  placeholder="Your message..."
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+                <input type="submit" value="Submit your message" />
+              </form>
+            </div>
+          </div>
+          <!--------------------------------------------------------------------------------->
         </div>
       </div>
     </header>
