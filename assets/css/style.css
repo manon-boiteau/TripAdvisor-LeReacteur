@@ -661,6 +661,7 @@ footer a {
   }
   .hidden {
     display: inherit;
+    cursor: pointer;
   }
 
   /* Main - navigation tabs */
