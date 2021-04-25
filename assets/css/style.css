@@ -373,11 +373,9 @@ main nav div:hover {
   line-height: 25px;
 }
 .intro .col-1 {
-  /* height: 100%; */
   width: 50%;
 }
 .intro .col-2 {
-  height: 100%;
   width: calc(50% - 100px);
   margin-left: 100px;
 }
