@@ -815,7 +815,7 @@ footer a {
   .intro .col-1 {
     width: 100%;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10 0 20px;
   }
   .intro .col-1 h2 {
     font-size: 28px;
@@ -837,7 +837,7 @@ footer a {
     border-radius: 0 0 10px 10px;
   }
   .intro button {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   /* section-1 */
@@ -894,7 +894,7 @@ footer a {
     margin-top: 0;
   }
   .guide-wrapper > div {
-    width: calc(100% / 1.5 - (20px / 3));
+    width: calc(100% / 1.1 - (20px / 3));
     overflow: hidden;
   }
 }
