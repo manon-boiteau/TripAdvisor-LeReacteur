@@ -740,9 +740,6 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    height: auto;
-  }
   /* Header */
   header {
     position: relative;
@@ -883,9 +880,6 @@ footer a {
 }
 
 @media screen and (max-width: 723px) {
-  .container {
-    height: auto;
-  }
   /* Intro */
   .intro {
     margin-bottom: 0;
