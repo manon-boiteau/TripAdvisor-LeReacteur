@@ -1,7 +1,7 @@
 # TripAdvisor-LeReacteur
 
 🗓 April 2021.  
-🪄 Frontend - copy of a part of one page of TripAdvisor website.
+🪄 Frontend - copy of a part of one page of TripAdvisor website.  
 👉🏻 Check: [My TripAdvisor exercice](https://mytripadvisor-lereacteur-2021.netlify.app/)
 
 ## Welcome in my school exercice
