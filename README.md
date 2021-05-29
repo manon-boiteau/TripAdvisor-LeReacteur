@@ -1,25 +1,41 @@
-# TripAdvisor-LeReacteur
+# TRIPADVISOR CLONE 🏖
 
-🗓 April 2021.  
-🪄 Frontend - copy of a part of one page of TripAdvisor website.  
-👉🏻 Check [That](https://mytripadvisor-lereacteur-2021.netlify.app/)
+⛅️ April 2021  
+⚙️ Backend - check the backend [repo](https://github.com/manon-boiteau/tripAdvisor-back-LeReacteur/blob/main/index.js) (modal contact form)  
+✨ Frontend  
+🔗 Netlify - check [that](https://mytripadvisor-lereacteur-2021.netlify.app/)
 
-## Welcome in my school exercice
+## 🌈 Overview - Welcome dude
 
-Tripadvisor, Inc. is an American online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. It also offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
+---
 
-### My work?
-
-To code the frontend of a part of one page of TripAdvisor (see down below) with all the technics we saw in class, so as: flexbox, calc, media queries... There is no backend and no JavaScript for user interaction in this work.  
-The difficulty here was to adapt the page for all the screen
+TripAdvisor clone made at [Le Reacteur](https://www.lereacteur.io/) Bootcamp.  
+4 screens are availables: TripAdvisor home page for desktop, tablette, mobile and modal contact form.
 
 ![Paris's TripAdvisor page - desktop](assets/img/desktop-tripadvisor.png)
 ![Paris's TripAdvisor page - modal](assets/img/desktop-tripadvisor.png)
 ![Paris's TripAdvisor page - tablette](assets/img/modal-tripadvisor.png)
 ![Paris's TripAdvisor page - mobile](assets/img/mobile-tripadvisor.png)
 
-## Languages
+## 👩🏻‍💻 Tasks
 
-HTML5 & CSS3 only.
+---
+
+✘ Do integration (CSS only: flexbox, calc, carousel)  
+✘ Create a modal
+✘ Make responsive - the most important par of the project
+
+## 📚 Stacks
+
+---
+
+[HTML5](https://www.w3schools.com/html/default.asp)  
+[CSS3](https://www.w3schools.com/css/default.asp)
+
+## 🗝 Installation and usage
+
+---
+
+No particular installation, the project is made with only HTML5 and CSS3.
 
 🙏🏻 Thank you @LeReacteur.
